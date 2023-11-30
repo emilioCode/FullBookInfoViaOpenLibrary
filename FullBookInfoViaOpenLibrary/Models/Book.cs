@@ -1,10 +1,7 @@
-﻿namespace FullBookInfoViaOpenLibrary.Models
-{
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
+namespace FullBookInfoViaOpenLibrary.Models
+{
     public class Book
     {
         [JsonPropertyName("publishers")]
@@ -37,51 +34,36 @@
         public List<Language> Languages { get; set; }
         [JsonPropertyName("pagination")]
         public string Pagination { get; set; }
-
         [JsonPropertyName("source_records")]
         public List<string> SourceRecords { get; set; }
-
         [JsonPropertyName("title")]
         public string Title { get; set; }
-
         [JsonPropertyName("dewey_decimal_class")]
         public List<string> DeweyDecimalClass { get; set; }
-
         [JsonPropertyName("notes")]
         public Note Notes { get; set; }
-
         [JsonPropertyName("identifiers")]
         public Identifiers Identifiers { get; set; }
-
         [JsonPropertyName("created")]
         public CustomDate Created { get; set; }
-
         [JsonPropertyName("edition_name")]
         public string EditionName { get; set; }
         [JsonPropertyName("lccn")]
         public List<string> Lccn { get; set; }
-
         [JsonPropertyName("local_id")]
         public List<string> LocalId { get; set; }
-
         [JsonPropertyName("publish_date")]
         public string PublishDate { get; set; }
-
         [JsonPropertyName("publish_country")]
         public string PublishCountry { get; set; }
-
         [JsonPropertyName("last_modified")]
         public CustomDate LastModified { get; set; }
-
         [JsonPropertyName("by_statement")]
         public string ByStatement { get; set; }
-
         [JsonPropertyName("works")]
         public List<Work> Works { get; set; }
-
         [JsonPropertyName("type")]
         public Type Type { get; set; }
-
         [JsonPropertyName("revision")]
         public int Revision { get; set; }
     }
